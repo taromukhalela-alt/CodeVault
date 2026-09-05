@@ -1,0 +1,7 @@
+/*
+ * ESLint CONFIGURATION (BACKEND)
+ * Purpose: Code quality and style rules for backend JavaScript/Node.js
+ * Connected To: backend/ JavaScript files
+ * Used By: ESLint tool and IDE for checking code consistency
+ * Contents: Parsing rules, environment setup, custom rules
+ */

@@ -1,0 +1,7 @@
+/*
+ * PRETTIER CONFIGURATION
+ * Purpose: Code formatter configuration for consistent code formatting across project
+ * Connected To: All JavaScript/JSX files in backend and frontend
+ * Used By: Prettier tool and IDE for automatic code formatting
+ * Contents: Indentation, quotes, semicolons, line length settings
+ */

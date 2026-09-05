@@ -1,0 +1,7 @@
+/*
+ * FRONTEND BUILD IGNORE FILE
+ * Purpose: Specifies files to exclude when building Docker image
+ * Connected To: frontend/Dockerfile
+ * Used By: Docker build process
+ * Contents: node_modules, tests, source files (post-build), development files
+ */

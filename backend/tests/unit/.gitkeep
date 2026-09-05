@@ -1,0 +1,7 @@
+/*
+ * BACKEND UNIT TESTS
+ * Purpose: Unit tests directory for backend services and utilities
+ * Connected To: services/, utils/, controllers/
+ * Used By: npm test command for testing backend logic
+ * Testing Framework: Jest or Mocha/Chai
+ */

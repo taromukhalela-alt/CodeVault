@@ -1,0 +1,7 @@
+/*
+ * FRONTEND E2E TESTS
+ * Purpose: End-to-end tests directory for user workflows across pages
+ * Connected To: All pages and components
+ * Used By: npm run test:e2e command for testing full application flows
+ * Testing Framework: Cypress or Playwright
+ */

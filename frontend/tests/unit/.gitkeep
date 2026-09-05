@@ -1,0 +1,7 @@
+/*
+ * FRONTEND UNIT TESTS
+ * Purpose: Unit tests directory for React components and utilities
+ * Connected To: src/components/, src/utils/, src/hooks/
+ * Used By: npm test command for testing component logic
+ * Testing Framework: Jest with React Testing Library
+ */

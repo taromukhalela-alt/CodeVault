@@ -1,0 +1,7 @@
+/*
+ * BACKEND BUILD IGNORE FILE
+ * Purpose: Specifies files to exclude when building Docker image
+ * Connected To: backend/Dockerfile
+ * Used By: Docker build process
+ * Contents: node_modules, tests, documentation, development files
+ */

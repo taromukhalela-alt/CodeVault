@@ -1,0 +1,7 @@
+/*
+ * BACKEND INTEGRATION TESTS
+ * Purpose: Integration tests directory for API endpoints and database interactions
+ * Connected To: routes/, controllers/, services/
+ * Used By: npm test command for testing API integration
+ * Testing Framework: Jest with supertest
+ */
