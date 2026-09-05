@@ -7,19 +7,22 @@
  * Functions: getUsers(), getUserById(), createUser(), updateUser(), deleteUser(), etc.
  */
 
-import { formatError, formatResponse } from '../utils/index.js';
+import { formatError, formatResponse, log, error } from '../utils/index.js';
 import { getUsers, getUserByIdService, updateUserProfile, getUserProjectsService } from '../services/userService.js';
 
 export async function getAllUsers(req, res, next) {
     try {
         const users = await getUsers();
 
+        log(`Retrieved all users: ${users}`)
         return res.status(200).json(
             formatResponse(users, "Successfully fetched users")
         );
-    } catch (error) {
+    } catch (caughtError) {
+
+        error(`Error fetching them users.`);
         return res.status(500).json(
-            formatError(error, "Failed to fetch users")
+            formatError(caughtError, "Failed to fetch users")
         );
     }
 }
@@ -29,12 +32,15 @@ export async function getUserById(req, res, next) {
         const userId = req.params.id;
         const user = await getUserByIdService(userId);
 
+        log(`Successfully retrieved user with id: ${userId}`);
         return res.status(200).json(
             formatResponse(user, "Successfully fetched user")
         );
-    } catch (error) {
+    } catch (caughtError) {
+
+        error(`Error fetching user.`);
         return res.status(404).json(
-            formatError(error, "User not found")
+            formatError(caughtError, "User not found")
         );
     }
 }
@@ -45,10 +51,14 @@ export async function updateUser(req, res, next) {
         const updateData = req.body;
         const updatedUser = await updateUserProfile(userId, updateData);
 
+
+        log(`Successfully updated user with id: ${userId}`);
         return res.status(200).json(
             formatResponse(updatedUser, "Successfully updated user")
         );
-    } catch (error) {
+    } catch (caughtError) {
+
+        error(`Error updating user.`)
         return res.status(404).json(
             formatError(error, "User not found")
         );

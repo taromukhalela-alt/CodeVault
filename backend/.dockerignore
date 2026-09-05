@@ -5,3 +5,5 @@
  * Used By: Docker build process
  * Contents: node_modules, tests, documentation, development files
  */
+
+node_modules

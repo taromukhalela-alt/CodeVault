@@ -7,9 +7,7 @@
  */
 
 import mongoose from 'mongoose';
-import { log, error
-    
- } from '../utils/index.js';
+import { log, error } from '../utils/index.js';
 
 async function connectDB() {
     try {
@@ -18,7 +16,7 @@ async function connectDB() {
             useUnifiedTopology: true,
         });
         log(`MongoDB Connected: ${conn.connection.host}`);
-    } catch (error) {
-        error(`Error connecting to MongoDB: ${error.message}`);
+    } catch (caughtError) {
+        error(`Error connecting to MongoDB: ${caughtError.message}`);
     }
 }
